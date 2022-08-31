@@ -10,8 +10,8 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>ResCSS Menú</title>
 </head>
-<body>
-    <header>
+<body class="grid-container">
+    <header class="header">
         <section class="header-logo">
             <a href="#" class="logo">Restaurant CSS.</a>
             <ul class="sci">
@@ -22,38 +22,42 @@
             <a href="index.html" class="toggle"></a>
         </section>  
     </header>
-    <main>
+    <main class="main">
         <div id="entradas"></div>
         <h2 id="title-food">Entradas</h2>
         <section>
-            <div class="card">
+            <div class="card" style="background-image: url(../img/lenteja.jpg);
+                                    background-position: right;">
                 <span class="price">S/.15</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Lentejitas</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/quinua.jpg);
+                                    background-position: center;">
+                <span class="price">S/.19</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Sopa de quinua</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/pollo.jpg);
+                                    background-position: center;">
+                <span class="price">S/.14</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Chaufa de pollo</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/pescado.jpg);
+                                     background-position: center;">
+                <span class="price">S/.14</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Ensalada de pescado</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
@@ -62,7 +66,8 @@
         <div id="postres"></div>
         <h2 id="title-food">Postres</h2>
         <section >
-            <div class="card">
+            <div class="card" style="background-image: url(../img/ensaladaf.jpg);
+                                    background-position: right;">
                 <span class="price">S/.15</span>
                 <div class="card-content">
                     <h2 class="card-title">Ensalada de frutas</h2>
@@ -70,26 +75,29 @@
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/panq.jpg);
+                                    background-position: center;">
+                <span class="price">S/.19</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Panqueque con fresa</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/queso.jpg);
+                                    background-position: center;">
+                <span class="price">S/.14</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Tarta de queso</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/pastel.jpg);
+                                     background-position: center;">
+                <span class="price">S/.14</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Pastel con bayas</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
@@ -98,34 +106,38 @@
         <div id="bebidas"></div>
         <h2 id="title-food">Bebidas</h2>
         <section >
-            <div class="card">
+            <div class="card" style="background-image: url(../img/vino.jpg);
+                                    background-position: right;">
                 <span class="price">S/.15</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Vino - Dominus Estate</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/te.jpg);
+                                    background-position: center;">
+                <span class="price">S/.19</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Té helado</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/naranja.jpg);
+                                    background-position: center;">
+                <span class="price">S/.14</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Jugo de naranja</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
             </div>
-            <div class="card">
-                <span class="price">S/.15</span>
+            <div class="card" style="background-image:url(../img/parfait.jpg);
+                                     background-position: center;">
+                <span class="price">S/.14</span>
                 <div class="card-content">
-                    <h2 class="card-title">Ensalada de frutas</h2>
+                    <h2 class="card-title">Parfait de fresa</h2>
                     <p class="card-boddy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, alias. Voluptates debitis corporis quidem cupiditate minus quas quasi magnam, perferendis ut. Consectetur eaque odio numquam quasi aspernatur minima veniam consequatur.</p>
                     <a href="#" class="button">Ordenar</a>
                 </div>             
@@ -134,8 +146,6 @@
     </main>
     <footer class="footer">
         <!-- footer section starts  -->
-    
-
         <div class="box-container">
 
             <div class="box">
@@ -162,7 +172,7 @@
             <div class="box">
                 <h3>Contactos</h3>
                 <a href="#">+51 945467307</a>
-                <a href="#">madereriaMichel@gmail.com</a>
+                <a href="#">comersaludablesabroso@gmail.com</a>
                 <img src="img/payment.jpeg" alt="">
             </div>
 

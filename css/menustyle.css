@@ -10,14 +10,20 @@
 *::after{
     box-sizing: border-box;
 }
+body{
+    background: var(--negro900);
+}
 
-header{
+
+
+.header{
+    grid-area: header;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header .header-logo{
+.header .header-logo{
     /* position: absolute; */
     top: 0;
     left: 0;
@@ -29,7 +35,7 @@ header .header-logo{
     align-items: center;
 }
 
-header .header-logo .logo{
+.header .header-logo .logo{
     position: relative;
     font-size: 2em;
     color: #fff;
@@ -39,7 +45,7 @@ header .header-logo .logo{
     text-shadow: 2px 2px 0 rgba(0,0,0,.1);
     transition: 0.5s;
 }
-header .header-logo .toggle{
+.header .header-logo .toggle{
     position: relative;
     width: 40px;
     height: 40px;
@@ -53,7 +59,7 @@ header .header-logo .toggle{
     align-items: center;
 
 }
-header .header-logo .toggle:before{
+.header .header-logo .toggle:before{
     content: 'Volver';
     position: absolute;
     right: 45px;
@@ -67,21 +73,21 @@ header .header-logo .toggle:before{
 }
 
 
-header .sci{
+.header .sci{
     
     bottom: 40px;
     right: 100px;
     display: flex;
     z-index: 100;
 }
-header .sci li{
+.header .sci li{
     list-style: none;
     margin: 5px;
     padding: 0 6px;
     background: #fff;
     transition: 0.5s;
 }
-header .sci li a{
+.header .sci li a{
     color:#111;
     text-decoration: none;
     display: inline-block;
@@ -91,17 +97,17 @@ header .sci li a{
     text-transform: uppercase;
 }
 
-body{
-    background: var(--negro900);
+.main{
+    grid-area: main;
 }
-main #title-food{
+.main #title-food{
     margin: 0%;
     font-size: 4rem;
     font-family: 'Dancing Script', cursive;
     color: var(--blanco100);
     text-align: center;
 }
-main section{
+.main section{
     display: flex;
     /* min-height: 100vh; */
     place-items: center;
@@ -109,7 +115,8 @@ main section{
     padding: 0 5;
     flex-wrap: wrap;
 }
-main section .card .price{
+
+.main section .card .price{
     top: 1rem; left: 1rem;
     padding: .7rem 1rem;
     font-size: 2rem;
@@ -120,7 +127,6 @@ main section .card .price{
 }
 .card {
     color: var(--blanco100);
-    background-image: url(../img/ensaladaf.jpg);
     background-size: cover;
     padding: 6rem 0 0;
     margin: .6rem .6rem;
@@ -182,7 +188,8 @@ main section .card .price{
     background-color: var(--blanco100);
 }
 
-footer{
+.footer{
+    grid-area: footer;
     margin-top: 3em;
     background-color: #333;
     padding: 0% 1.5%;
@@ -239,4 +246,12 @@ footer{
 
 .footer .credit span{
     color:var(--green);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
 }
